@@ -1,4 +1,26 @@
+---
+layout: default
+---
 
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+<<<<<<< Updated upstream
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta name="verify-v1" content="8pk0OmwNjimVjzLiZ2yjtnl15MZYIYhTKaQZKvnUiJg=" />
@@ -50,7 +72,6 @@ pageTracker._trackPageview();
 <div id="content" align="right">
     <p><strong>ERLAND SANBORN</strong></p>
     <p><strong><span class="small">me at erlandsanborn dot com</span></strong></p>
+=======
+>>>>>>> Stashed changes
 </div>
-<div style="position: absolute; width: 100%; top: 50%;"><center>UNDER HEAVY MAINTENANCE</center></div>
-</body>
-</html>
